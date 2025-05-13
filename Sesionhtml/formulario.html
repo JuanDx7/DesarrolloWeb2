@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="../estilos/estil.css">
 </head>
 <body>
-    <h2>Iniciar Sesión</h2>
+<div class="background"></div>
+    <h1>Music Class</h1>
+  <div class="Formulario" >
+         <h2>Iniciar Sesión</h2>
     <form action="autenticar.php" method="POST">
         <label>Usuario:</label>
         <input type="text" name="usuario" required><br><br>
+        
         <label>Contraseña:</label>
         <input type="password" name="contrasena" required><br><br>
         <input type="submit" value="Entrar">
     </form>
+  </div> 
+
 </body>
 </html>
