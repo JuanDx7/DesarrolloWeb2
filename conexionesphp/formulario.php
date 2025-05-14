@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="background"></div>
-    <h1>Music Class</h1>
+  <h1>Music Class</h1>
   <div class="Formulario" >
          <h2>Iniciar Sesión</h2>
     <form action="procesarlg.php" method="POST">

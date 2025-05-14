@@ -2,6 +2,8 @@
 require 'conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_start(); // 🟢 Iniciar sesión
+
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
 
@@ -15,16 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = $resultado->fetch_assoc();
 
         if (password_verify($contrasena, $usuario['contrasena'])) {
-            // ✅ Correcto, redirigir
-            header("Location: paginaPrincipal.php");
+
+            $_SESSION['nombre'] = $usuario['nombre'];
+
+
+            header("Location: principal.php");
             exit();
         } else {
-            // Contraseña incorrecta
             echo "<script> alert('La contraseña es incorrecta.'); window.location.href = 'formulario.php';</script>";
             exit();
         }
     } else {
-        // Correo no encontrado
         echo "<script> alert('Correo no registrado.'); window.location.href = 'formulario.php';</script>";
         exit();
     }
