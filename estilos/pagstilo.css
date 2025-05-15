@@ -12,7 +12,6 @@ h1 {
   color: white;
   text-align: center;
   top: 20px;  
-  width: 100%;
   font-family: Verdana;
   font-size: 36px;
   text-shadow: 
@@ -20,6 +19,15 @@ h1 {
   1.5px -1.5px 0px black,
   -1.5px 1.5px 0px black,
   1.5px 1.5px 0px black;  
+}
+
+p{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 a {
@@ -33,3 +41,4 @@ a {
     border-radius: 5px;
     font-weight: bold;
 }
+

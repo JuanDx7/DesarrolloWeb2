@@ -1,0 +1,77 @@
+/* Archivo: estilos/listausr.css */
+
+/* Cuerpo y fondo */
+body {
+    margin: 0;
+    padding: 20px;
+} 
+
+/* Contenedor principal */
+p {
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título centrado */
+h2 {
+    font-family: Verdana;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Enlace para cerrar sesión */
+a {
+    display: inline-block;
+    float: right;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #c0392b;
+    border: 2px solid #c0392b;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Celdas de la tabla */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Filas alternadas para mejor lectura */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Al pasar el mouse sobre filas */
+tr:hover {
+    background-color: #d6eaf8;
+    cursor: default;
+}
+
+/* Limpiar float para contenedores que tengan flotantes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

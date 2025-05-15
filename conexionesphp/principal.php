@@ -2,17 +2,12 @@
 session_start();
 
 if (!isset($_SESSION['nombre'])) {
-    // No hay sesión activa
     header("Location: formulario.php");
     exit();
 }
 
-// Guardar el nombre en una variable y luego cerrar sesión
-$nombreUsuario = $_SESSION['nombre'];
-session_unset();    // Elimina todas las variables de sesión
-session_destroy();  // Destruye la sesión completamente
+$nombreUsuario = $_SESSION['nombre']; // Solo obtenemos el nombre, sin destruir la sesión
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,7 +18,11 @@ session_destroy();  // Destruye la sesión completamente
 <body>
     <div class="background"></div>
     <h1>Bienvenido, <?php echo htmlspecialchars($nombreUsuario); ?>!</h1>
-    <p>Contenido exclusivo solo tras iniciar sesión.</p>
-    <a href="formulario.php">Cerrar sesión</a>
+    <p>Lo sentimos pero por el momento aún estamos trabajando en el contenido. <br>
+    Vuelve más tarde.</p>
+
+    <!-- Este enlace lleva al archivo que cierra la sesión -->
+    <a href="cerrar_sesion.php">Cerrar sesión</a>
 </body>
 </html>
+
