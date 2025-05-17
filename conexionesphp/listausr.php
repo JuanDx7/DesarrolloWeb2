@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['correo_adm']) || $_SESSION['tipo'] !== 'admin') {
-    header("Location: formulario.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -17,7 +17,7 @@ $correoAdmin = $_SESSION['correo_adm'];
 <head>
     <meta charset="UTF-8">
     <title>Lista de Estudiantes</title>
-    <link rel="stylesheet" href="../estilos/listastl.css">
+    <link rel="stylesheet" href="../estilos/lista_estilo.css">
 </head>
 <body>
 

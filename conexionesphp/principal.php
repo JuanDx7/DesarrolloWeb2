@@ -2,18 +2,18 @@
 session_start();
 
 if (!isset($_SESSION['nombre'])) {
-    header("Location: formulario.php");
+    header("Location: index.php");
     exit();
 }
 
-$nombreUsuario = $_SESSION['nombre']; // Solo obtenemos el nombre, sin destruir la sesión
+$nombreUsuario = $_SESSION['nombre']; 
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Página Principal</title>
-    <link rel="stylesheet" href="../estilos/pagstilo.css">
+    <link rel="stylesheet" href="../estilos/pag_estilo.css">
 </head>
 <body>
     <div class="background"></div>

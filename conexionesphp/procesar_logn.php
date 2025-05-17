@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
 
-    // 1. Buscar en tabla admin_lg
+    // Buscar en tabla admin_lg
     $sql_admin = "SELECT * FROM admin_lg WHERE correo = ?";
     $stmt_admin = $conexion->prepare($sql_admin);
     $stmt_admin->bind_param("s", $correo);
@@ -23,12 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: listausr.php");
             exit();
         }   else {
-            echo "<script> alert('Contraseña incorrecta.'); window.location.href = 'formulario.php';</script>";
+            echo "<script> alert('Contraseña incorrecta.'); window.location.href = 'index.php';</script>";
             exit();
         } 
     } 
 
-    // 2. Si no es admin, buscar en newregistros (usuarios normales)
+    // Si no es admin, buscar en newregistros (usuarios normales)
     $sql_user = "SELECT * FROM newregistros WHERE correo = ?";
     $stmt_user = $conexion->prepare($sql_user);
     $stmt_user->bind_param("s", $correo);
@@ -45,11 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: principal.php");
             exit();
         } else {
-            echo "<script> alert('La contraseña es incorrecta.'); window.location.href = 'formulario.php';</script>";
+            echo "<script> alert('La contraseña es incorrecta.'); window.location.href = 'index.php';</script>";
             exit();
         }
     } else {
-        echo "<script> alert('Correo no registrado.'); window.location.href = 'formulario.php';</script>";
+        echo "<script> alert('Correo no registrado.'); window.location.href = 'index.php';</script>";
         exit();
     }
     

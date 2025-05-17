@@ -16,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado->num_rows > 0) {
         echo "<script>alert('Ya existe una cuenta con ese correo.'); window.history.back();</script>";
     } else {
-        // Usar sentencias preparadas para seguridad
+        // Seguridad
         $consulta = $conexion->prepare("INSERT INTO newregistros(nombre, correo, contrasena, fecha_nac, instrumento, fecha_insc) 
                                     VALUES (?, ?, ?, ?, ?, ?)");
         $consulta->bind_param("ssssss", $nombre, $correo, $contrasena, $fechaNacimiento, $instrumento, $fechaRegistro);
 
         if ($consulta->execute()) {
-            echo "<script>alert('¡Registro exitoso!'); window.location.href = 'formulario.php';</script>";
+            echo "<script>alert('¡Registro exitoso!'); window.location.href = 'index.php';</script>";
         } else {
             echo "<script>alert('Error al registrar: " . $conexion->error . "');</script>";
         }

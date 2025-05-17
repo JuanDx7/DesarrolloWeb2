@@ -37,7 +37,7 @@ h1 {
   -1.5px -1.5px 0px black,  
   1.5px -1.5px 0px black,
   -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  /* Este "text-shadow" crea el efecto de borde */
+  1.5px 1.5px 0px black;  
 }
 
 h2 {
@@ -48,10 +48,8 @@ h2 {
   -1.5px -1.5px 0px black,  
   1.5px -1.5px 0px black,
   -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  /* Este "text-shadow" crea el efecto de borde */
+  1.5px 1.5px 0px black;  
 }
-
-
 
 label {
     display: block;

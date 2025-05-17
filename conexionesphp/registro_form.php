@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link rel="stylesheet" href="../estilos/estilrgs.css">
+    <link rel="stylesheet" href="../estilos/estilo_rgs.css">
 </head>
 <body>
     <div class="background"></div>
     <div class="formulario-registro">
         <h2>Registro de Usuario</h2>
-        <form action="procesarrg.php" method="POST">
+        <form action="procesar_reg.php" method="POST">
             <label>Nombre:</label>
             <input type="text" name="nombre" required><br><br>
 
