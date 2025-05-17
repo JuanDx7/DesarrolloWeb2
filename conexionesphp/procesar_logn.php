@@ -8,16 +8,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Buscar en tabla admin_lg
     $sql_admin = "SELECT * FROM admin_lg WHERE correo = ?";
-    $stmt_admin = $conexion->prepare($sql_admin);
-    $stmt_admin->bind_param("s", $correo);
-    $stmt_admin->execute();
-    $resultado_admin = $stmt_admin->get_result();
+    $consulta_admin = $conexion->prepare($sql_admin);
+    $consulta_admin->bind_param("s", $correo);
+    $consulta_admin->execute();
+    $resultado_admin = $consulta_admin->get_result();
 
     if ($resultado_admin->num_rows === 1) {
         $admin = $resultado_admin->fetch_assoc();
 
         if (password_verify($contrasena, $admin['contrasena'])) {
-            $_SESSION['correo_adm'] = $admin['correo'];  // o el campo que uses
+            $_SESSION['correo_adm'] = $admin['correo']; 
             $_SESSION['tipo'] = 'admin';
 
             header("Location: listausr.php");
@@ -26,14 +26,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<script> alert('Contraseña incorrecta.'); window.location.href = 'index.php';</script>";
             exit();
         } 
-    } 
+    }     
 
-    // Si no es admin, buscar en newregistros (usuarios normales)
+    $resultado_admin->close();
+
+    // Si no es admin, buscar usuarios normales
     $sql_user = "SELECT * FROM newregistros WHERE correo = ?";
-    $stmt_user = $conexion->prepare($sql_user);
-    $stmt_user->bind_param("s", $correo);
-    $stmt_user->execute();
-    $resultado_user = $stmt_user->get_result();
+    $consulta_user = $conexion->prepare($sql_user);
+    $consulta_user->bind_param("s", $correo);
+    $consulta_user->execute();
+    $resultado_user = $consulta_user->get_result();
 
     if ($resultado_user->num_rows === 1) {
         $user = $resultado_user->fetch_assoc();
@@ -52,6 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script> alert('Correo no registrado.'); window.location.href = 'index.php';</script>";
         exit();
     }
-    
+
+    $resultado_user->close();
+    $conexion->close();
+
 }
 ?>

@@ -18,10 +18,9 @@ $nombreUsuario = $_SESSION['nombre'];
 <body>
     <div class="background"></div>
     <h1>Bienvenido, <?php echo htmlspecialchars($nombreUsuario); ?>!</h1>
-    <p>Lo sentimos pero por el momento aún estamos trabajando en el contenido. <br>
+    <p>Lo sentimos pero por el momento aún no iniciamos las clases. <br>
     Vuelve más tarde.</p>
 
-    <!-- Este enlace lleva al archivo que cierra la sesión -->
     <a href="cerrar_sesion.php">Cerrar sesión</a>
 </body>
 </html>
