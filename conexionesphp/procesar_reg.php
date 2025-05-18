@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado->num_rows > 0) {
         echo "<script>alert('Ya existe una cuenta con ese correo.'); window.history.back();</script>";
     } else {
-        // Seguridad
+        
         $consulta = $conexion->prepare("INSERT INTO newregistros(nombre, correo, contrasena, fecha_nac, instrumento, fecha_insc) 
                                     VALUES (?, ?, ?, ?, ?, ?)");
         $consulta->bind_param("ssssss", $nombre, $correo, $contrasena, $fechaNacimiento, $instrumento, $fechaRegistro);

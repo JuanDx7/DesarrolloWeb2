@@ -1,0 +1,4 @@
+Las credenciales de administrador 1 para el formulario es: correo admin@1234.com contraseña: 12345
+Las credenciales de administrador 2 para el formulario es: correo admin@777.com contraseña: 12345
+
+Enlace GitHub: https://github.com/JuanDx7/LoginDsWeb
