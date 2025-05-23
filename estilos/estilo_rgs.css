@@ -1,67 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-    overflow-y: auto;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;      /* Fuente principal del contenido */
+    background-color: #f0f0f0;           /* Color de fondo gris claro */
+    margin: 0;                           /* Elimina el margen por defecto */
+    padding: 20px;                       /* Espaciado interno */
+    min-height: 100vh;                   /* Asegura que el contenido mínimo ocupe toda la altura de la pantalla */
+    overflow-y: auto;                    /* Permite desplazamiento vertical si el contenido es más largo */
+    box-sizing: border-box;             /* Incluye padding y borde en el cálculo del tamaño total */
 }
 
+/* Fondo de pantalla completo fijo con opacidad */
 .background {
-    position: fixed;
+    position: fixed;                    /* El fondo permanece fijo al hacer scroll */
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../img/fondoinicio.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.4;
-    z-index: -1;
+    width: 100vw;                       /* Ancho total de la ventana del navegador */
+    height: 100vh;                      /* Altura total de la ventana del navegador */
+    background-image: url('../img/fondoinicio.jpg');  /* Imagen de fondo */
+    background-size: cover;             /* La imagen cubre toda el área sin distorsión */
+    background-position: center;        /* Centra la imagen */
+    opacity: 0.4;                       /* Hace que el fondo sea semitransparente */
+    z-index: -1;                        /* Coloca el fondo detrás del contenido */
 }
 
+/* Contenedor del formulario de registro */
 .formulario-registro {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    margin: 0 auto;
+    background-color: #fff;             /* Fondo blanco para el formulario */
+    padding: 30px;                      /* Espaciado interno */
+    border-radius: 10px;                /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
+    width: 350px;                       /* Ancho fijo del formulario */
+    margin: 0 auto;                     /* Centrado horizontal */
 }
 
+/* Encabezado del formulario */
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center;                 /* Texto centrado */
+    margin-bottom: 20px;               /* Espaciado inferior */
 }
 
+/* Estilo de las etiquetas de los campos */
 label {
-    display: block;
-    margin-bottom: 5px;
+    display: block;                     /* Muestra las etiquetas en su propia línea */
+    margin-bottom: 5px;                /* Espacio entre la etiqueta y el campo */
 }
 
+/* Campos de entrada de texto y listas desplegables */
 input,
 select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+    width: 100%;                        /* Ancho completo del contenedor */
+    padding: 8px;                       /* Espaciado interno */
+    margin-bottom: 15px;               /* Espacio inferior entre campos */
+    box-sizing: border-box;            /* Incluye padding en el cálculo de ancho */
 }
 
+/* Botón de envío */
 input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #007bff;         /* Color azul */
+    color: white;                      /* Texto blanco */
+    border: none;                      /* Sin borde */
+    cursor: pointer;                   /* Cambia el cursor al pasar sobre el botón */
 }
 
+/* Efecto al pasar el mouse sobre el botón */
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3;         /* Azul más oscuro en hover */
 }
 
+/* Estilo para mostrar mensajes de error */
 .mensaje-error {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
-    display: none;
+    color: red;                        /* Texto rojo */
+    font-size: 0.9em;                  /* Tamaño de fuente ligeramente más pequeño */
+    margin-top: 5px;                   /* Espacio superior */
+    display: none;                     /* Oculto por defecto, se mostrará con JS si hay error */
 }

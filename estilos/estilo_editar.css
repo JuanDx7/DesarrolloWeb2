@@ -1,87 +1,94 @@
-/* editar_estilo.css */
-
 body {
-    margin: 0;
-    padding: 20px;
-    font-family: Verdana, sans-serif;
-    background-color: #f7f9fc;
-    color: #222;
+    margin: 0;                            /* Elimina el margen por defecto del navegador */
+    padding: 20px;                        /* Espaciado interno general */
+    font-family: Verdana, sans-serif;     /* Fuente principal del sitio */
+    background-color: #f7f9fc;            /* Color de fondo gris azulado claro */
+    color: #222;                          /* Color de texto oscuro para buena legibilidad */
 }
 
+/* Estilo del título principal */
 h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #222;
+    font-size: 36px;                      /* Tamaño grande para destacar */
+    text-align: center;                   /* Centrado horizontal */
+    margin-bottom: 25px;                  /* Espacio inferior para separación visual */
+    color: #222;                          /* Color igual al texto del cuerpo */
 }
 
+/* Contenedor del formulario */
 form {
-    max-width: 450px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    max-width: 450px;                     /* Ancho máximo fijo para buena legibilidad */
+    margin: 0 auto;                       /* Centrado horizontal del formulario */
+    background-color: white;             /* Fondo blanco para contraste con el fondo general */
+    padding: 25px 30px;                   /* Espaciado interno en todas las direcciones */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar efecto*/
+    border-radius: 8px;                   /* Bordes redondeados para suavidad visual */
 }
 
+/* Estilo de etiquetas de los campos */
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
+    display: block;                       /* Ocupa toda la línea */
+    font-weight: bold;                   /* Texto en negrita */
+    margin-bottom: 8px;                  /* Separación con el campo */
 }
 
+/* Campos de entrada de texto, correo y fecha */
 input[type="text"],
 input[type="email"],
 input[type="date"] {
-    width: 100%;
-    padding: 10px 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
+    width: 100%;                          /* Toma el ancho total del contenedor */
+    padding: 10px 12px;                   /* Espaciado interno para facilidad de escritura */
+    margin-bottom: 20px;                  /* Espacio inferior entre campos */
+    border: 1px solid #ccc;               /* Borde gris claro */
+    border-radius: 4px;                   /* Bordes ligeramente redondeados */
+    font-size: 16px;                      /* Tamaño de texto legible */
+    box-sizing: border-box;              /* Incluye padding y borde en el ancho total */
+    transition: border-color 0.3s ease;   /* Transición suave al enfocar */
 }
 
+/* Efecto visual al enfocar los campos */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus {
-    border-color: #2980b9;
-    outline: none;
+    border-color: #2980b9;               /* Borde azul al enfocar */
+    outline: none;                       /* Elimina contorno predeterminado del navegador */
 }
 
+/* Botón de envío */
 input[type="submit"] {
-    background-color: #2980b9;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    padding: 12px 0;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #2980b9;           /* Azul fuerte */
+    color: white;                        /* Texto blanco */
+    font-weight: bold;                   /* Texto en negrita */
+    font-size: 18px;                     /* Tamaño de fuente destacada */
+    border: none;                        /* Sin borde */
+    padding: 12px 0;                     /* Espaciado vertical del botón */
+    width: 100%;                         /* Ancho completo */
+    border-radius: 5px;                  /* Bordes redondeados */
+    cursor: pointer;                     /* Cursor tipo mano */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el cursor */
 }
 
+/* Efecto hover en botón */
 input[type="submit"]:hover {
-    background-color: #1f6391;
+    background-color: #1f6391;           /* Azul más oscuro al pasar el cursor */
 }
 
+/* Estilo de enlaces */
 a {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #c0392b;
-    border: 2px solid #c0392b;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-align: center;
-    float: right;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;               /* Permite aplicar padding y border */
+    margin-top: 15px;                    /* Separación respecto al formulario */
+    text-decoration: none;               /* Elimina subrayado */
+    font-weight: bold;                   /* Negrita */
+    color: #c0392b;                      /* Rojo oscuro */
+    border: 2px solid #c0392b;           /* Borde rojo */
+    padding: 8px 16px;                   /* Espaciado interno estilo botón */
+    border-radius: 5px;                  /* Bordes redondeados */
+    text-align: center;                  /* Centra el texto dentro del botón */
+    float: right;                        /* Alineado a la derecha del formulario */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave */
 }
 
+/* Efecto hover del enlace */
 a:hover {
-    background-color: #c0392b;
-    color: white;
+    background-color: #c0392b;           /* Fondo rojo al pasar el cursor */
+    color: white;                        /* Texto blanco */
 }

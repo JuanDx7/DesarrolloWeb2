@@ -1,44 +1,42 @@
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondo_prbateria.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+  position: absolute;      /* Fondo cubre todo el área del contenedor */
+  inset: 0;                /* top:0; right:0; bottom:0; left:0 */
+  background-image: url('../img/fondo_prbateria.jpg');  /* Imagen de fondo */
+  background-size: cover;  /* La imagen cubre todo el área sin deformarse */
+  background-position: center; /* Centrar la imagen */
+  opacity: 0.4;            /* Transparencia para no opacar el contenido */
+  z-index: -1;             /* Detrás de todo el contenido visible */
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  top: 20px;  
+  color: white;            /* Texto blanco para contraste con el fondo */
+  text-align: center;      /* Centrar texto */
   font-family: Verdana;
   font-size: 36px;
-  text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+  text-shadow:              /* Sombra para resaltar el texto */
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;
 }
 
-p{
-    font-weight: bold;
-    font-family: Verdana;
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+p {
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 20px;
+  text-align: center;
+  padding: 25px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Sombra para destacar el texto */
 }
 
 a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #c0392b;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+  position: absolute;      /* Posiciona el enlace en la ventana */
+  top: 20px;               /* 20px desde arriba */
+  right: 20px;             /* 20px desde la derecha */
+  text-decoration: none;   /* Sin subrayado */
+  color: white;            /* Texto blanco */
+  background-color: #c0392b; /* Rojo */
+  padding: 8px 12px;       /* Espaciado interno */
+  border-radius: 5px;      /* Bordes redondeados */
+  font-weight: bold;
 }
-

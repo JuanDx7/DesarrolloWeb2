@@ -1,44 +1,46 @@
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondo_prviolin.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+  position: absolute;        /* Posición absoluta para cubrir el área padre */
+  inset: 0;                  /* Equivalente a top:0; right:0; bottom:0; left:0; */
+  background-image: url('../img/fondo_prviolin.jpg'); /* Imagen de fondo */
+  background-size: cover;    /* La imagen cubre toda el contenedor sin distorsión */
+  background-position: center; /* Centrado de la imagen */
+  opacity: 0.4;              /* Opacidad para dar efecto semitransparente */
+  z-index: -1;               /* Fondo detrás de otros elementos */
 }
 
+/* Estilo para encabezados h1 */
 h1 {
-  color: white;
-  text-align: center;
-  top: 20px;  
-  font-family: Verdana;
-  font-size: 36px;
+  color: white;              /* Texto en blanco para contraste con fondo */
+  text-align: center;        /* Centrar texto horizontalmente */
+  font-family: Verdana;      /* Fuente Verdana */
+  font-size: 36px;           /* Tamaño grande para títulos */
+  /* Sombra para mejorar legibilidad */
   text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;  
 }
 
-p{
-    font-weight: bold;
-    font-family: Verdana;
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Estilo para párrafos */
+p {
+  font-weight: bold;          /* Negrita para destacar */
+  font-family: Verdana;       /* Fuente Verdana */
+  font-size: 20px;            /* Tamaño de texto legible */
+  text-align: center;         /* Centrar texto */
+  padding: 25px 30px;         /* Espaciado interior para mejor lectura */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra  para profundidad */
 }
 
+/* Estilo para enlaces  */
 a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #c0392b;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+  position: absolute;         /* Posición absoluta para colocarlo en esquina */
+  top: 20px;                  /* A 20px del borde superior */
+  right: 20px;                /* A 20px del borde derecho */
+  text-decoration: none;      /* Sin subrayado */
+  color: white;               /* Texto blanco */
+  background-color: #c0392b;  /* Fondo rojo intenso */
+  padding: 8px 12px;          /* Espaciado interno */
+  border-radius: 5px;         /* Bordes redondeados */
+  font-weight: bold;          /* Texto en negrita */
 }
-

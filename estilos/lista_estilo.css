@@ -1,61 +1,70 @@
+/* Estilos globales del cuerpo */
 body {
-    margin: 0;
-    padding: 20px;
-} 
-
-p {
-    font-weight: bold;
-    font-family: Verdana;
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0;                 /* Elimina márgenes predeterminados */
+    padding: 20px;             /* Espaciado interno general */
 }
 
+/* Estilos para los párrafos destacados */
+p {
+    font-weight: bold;         /* Texto en negrita */
+    font-family: Verdana;      /* Fuente limpia y profesional */
+    font-size: 20px;           /* Tamaño de texto grande */
+    text-align: center;        /* Centrado horizontal */
+    padding: 25px 30px;        /* Espaciado interno amplio */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave para resaltar */
+}
+
+/* Título principal */
 h2 {
     font-family: Verdana;
     font-size: 36px;
     text-align: center;
     margin-bottom: 25px;
-    color: #222;
+    color: #222;               /* Gris oscuro*/
 }
 
+/* Enlace flotante con estilo de botón */
 a {
-    display: inline-block;
-    float: right;
+    display: inline-block;     /* Permite aplicar paddings y borders */
+    float: right;              /* Posiciona el botón a la derecha */
     font-family: Verdana;
     margin-bottom: 15px;
-    text-decoration: none;
+    text-decoration: none;     /* Elimina subrayado predeterminado */
     font-weight: bold;
-    color: #c0392b;
-    border: 2px solid #c0392b;
-    padding: 6px 12px;
-    border-radius: 5px;
+    color: #c0392b;            /* Rojo oscuro */
+    border: 2px solid #c0392b; /* Borde rojo oscuro */
+    padding: 6px 12px;         /* Espaciado estilo botón */
+    border-radius: 5px;        /* Bordes redondeados */
 }
 
+/* Estilos para la tabla */
 table {
     font-family: Verdana;
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    width: 100%;               /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina doble borde entre celdas */
+    margin-top: 10px;          /* Separación respecto a elementos anteriores */
 }
 
+/* Celdas de la tabla */
 th, td {
-    border: 1px solid #ddd;
-    padding: 12px 15px;
-    text-align: center;
+    border: 1px solid #ddd;    /* Borde gris claro */
+    padding: 12px 15px;        /* Espaciado interno cómodo */
+    text-align: center;        /* Texto centrado */
 }
 
+/* Encabezado de tabla */
 th {
-    background-color: #2980b9;
-    color: white;
+    background-color: #2980b9; /* Azul fuerte */
+    color: white;              /* Texto blanco para contraste */
 }
 
+/* Filas pares: fondo alternativo para mejor legibilidad */
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Gris muy claro */
 }
 
+/* Efecto hover en filas */
 tr:hover {
-    background-color: #d6eaf8;
-    cursor: default;
+    background-color: #d6eaf8; /* Azul claro al pasar el cursor */
+    cursor: default;           
 }

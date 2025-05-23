@@ -1,44 +1,46 @@
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondo_prsaxofon.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+  position: absolute;     /* Posiciona el fondo de forma absoluta respecto al contenedor padre */
+  inset: 0;               /* Equivale a top: 0; right: 0; bottom: 0; left: 0; — cubre toda el área */
+  background-image: url('../img/fondo_prsaxofon.jpg'); /* Imagen de fondo */
+  background-size: cover;       /* La imagen cubre todo el fondo sin deformarse */
+  background-position: center;  /* Centra la imagen */
+  opacity: 0.4;                 /* Hace el fondo semitransparente */
+  z-index: -1;                  /* Coloca el fondo detrás de otros elementos */
 }
 
+/* Estilo para el título principal */
 h1 {
-  color: white;
-  text-align: center;
-  top: 20px;  
-  font-family: Verdana;
-  font-size: 36px;
+  color: white;                 /* Texto blanco para mayor contraste */
+  text-align: center;           /* Centra horizontalmente el texto */
+  font-family: Verdana;         /* Fuente Verdana */
+  font-size: 36px;              /* Tamaño grande para visibilidad */
+  /* Sombra para mejorar legibilidad sobre el fondo */
   text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;  
 }
 
-p{
-    font-weight: bold;
-    font-family: Verdana;
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Estilo para párrafos */
+p {
+  font-weight: bold;            /* Texto en negrita */
+  font-family: Verdana;         /* Fuente Verdana */
+  font-size: 20px;              /* Tamaño legible */
+  text-align: center;           /* Centra el texto */
+  padding: 25px 30px;           /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para profundidad */
 }
 
+/* Estilo para enlaces */
 a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #c0392b;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+  position: absolute;           /* Posición absoluta para ubicarse en la pantalla */
+  top: 20px;                   /* 20px desde el borde superior */
+  right: 20px;                 /* 20px desde el borde derecho */
+  text-decoration: none;        /* Sin subrayado */
+  color: white;                 /* Texto blanco */
+  background-color: #c0392b;    /* Fondo rojo */
+  padding: 8px 12px;            /* Espaciado interno */
+  border-radius: 5px;           /* Bordes redondeados */
+  font-weight: bold;            /* Texto en negrita */
 }
-

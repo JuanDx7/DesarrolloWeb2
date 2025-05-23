@@ -1,44 +1,46 @@
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondo_prpiano.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+  position: absolute;     /* Posición absoluta para cubrir toda el área del contenedor */
+  inset: 0;               /* Equivale a top:0; right:0; bottom:0; left:0; */
+  background-image: url('../img/fondo_prpiano.jpg'); /* Imagen de fondo específica */
+  background-size: cover;       /* La imagen cubre todo el fondo sin deformarse */
+  background-position: center;  /* Centra la imagen dentro del área */
+  opacity: 0.4;                 /* Hace el fondo parcialmente transparente */
+  z-index: -1;                  /* Se sitúa detrás de otros elementos */
 }
 
+/* Estilo para el encabezado principal (h1) */
 h1 {
-  color: white;
-  text-align: center;
-  top: 20px;  
-  font-family: Verdana;
-  font-size: 36px;
+  color: white;                 /* Texto blanco para mejor contraste */
+  text-align: center;           /* Centrado horizontal */
+  font-family: Verdana;         /* Fuente Verdana */
+  font-size: 36px;              /* Tamaño grande para el título */
+  /* Sombra alrededor del texto para mejorar la legibilidad */
   text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;  
 }
 
-p{
-    font-weight: bold;
-    font-family: Verdana;
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Estilo para párrafos*/
+p {
+  font-weight: bold;            /* Texto en negrita */
+  font-family: Verdana;         /* Fuente Verdana */
+  font-size: 20px;              /* Tamaño de texto legible */
+  text-align: center;           /* Texto centrado */
+  padding: 25px 30px;           /* Espacio interno para separar texto de bordes */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra */
 }
 
+/* Estilo para enlaces */
 a {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #c0392b;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+  position: absolute;           /* Posición absoluta para ubicarlo en pantalla */
+  top: 20px;                   /* 20px desde el borde superior */
+  right: 20px;                 /* 20px desde el borde derecho */
+  text-decoration: none;        /* Sin subrayado */
+  color: white;                 /* Texto blanco */
+  background-color: #c0392b;    /* Fondo rojo intenso */
+  padding: 8px 12px;            /* Espacio interno */
+  border-radius: 5px;           /* Bordes redondeados */
+  font-weight: bold;            /* Texto en negrita */
 }
-

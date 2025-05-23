@@ -1,84 +1,89 @@
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondoinicio.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+  position: absolute;  /* Se posiciona sobre todo el contenido */
+  inset: 0;  /* Ocupa toda el área del contenedor (top, right, bottom, left = 0) */
+  background-image: url('../img/fondoinicio.jpg');  /* Imagen de fondo */
+  background-size: cover;  /* Ajusta la imagen al tamaño del contenedor sin distorsión */
+  background-position: center;  /* Centra la imagen */
+  opacity: 0.4;  /* Aplica transparencia para ver el contenido sobre ella */
+  z-index: -1;  /* Coloca el fondo detrás del resto del contenido */
 }
 
+/* Estilo general del cuerpo de la página */
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+  margin: 0;  /* Elimina el margen por defecto del navegador */
+  height: 100vh;  /* Altura completa de la ventana del navegador */
+  display: flex;  /* Usa Flexbox para organizar el contenido */
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;  /* Centra verticalmente */
+  flex-direction: column;  /* Los elementos se alinean en columna */
+  position: relative;  
 }
 
-
+/* Estilo del formulario */
 form {
-  background-color: #ffffff;
-  font-family: Arial, sans-serif;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  font-family: Arial, sans-serif;
-
+  background-color: #ffffff;  /* Fondo blanco */
+  font-family: Arial, sans-serif;  /* Fuente del contenido del formulario */
+  padding: 30px;  /* Espaciado interior */
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra */
+  width: 300px;  /* Ancho fijo del formulario */
 }
 
+/* Título principal (generalmente el nombre de la página) */
 h1 {
   color: white;
   text-align: center;
-  top: 20px;  
+  top: 20px;
   width: 100%;
   font-family: Verdana;
   font-size: 36px;
+  /* Contorno negro alrededor del texto para mejor visibilidad */
   text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;
 }
 
+/* Subtítulo o encabezado secundario */
 h2 {
   text-align: center;
   color: azure;
   font-family: Verdana;
   text-shadow: 
-  -1.5px -1.5px 0px black,  
-  1.5px -1.5px 0px black,
-  -1.5px 1.5px 0px black,
-  1.5px 1.5px 0px black;  
+    -1.5px -1.5px 0px black,  
+    1.5px -1.5px 0px black,
+    -1.5px 1.5px 0px black,
+    1.5px 1.5px 0px black;
 }
 
+/* Estilo para etiquetas de los campos */
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;  /* Se muestra en una línea completa */
+  margin-bottom: 5px;  /* Espacio entre el label y el campo */
 }
 
+/* Campos de entrada de texto y contraseña */
 input[type="text"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+  width: 100%;  /* Ocupan todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;  /* Incluye el padding en el ancho total */
 }
 
+/* Botón de envío */
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;  /* Azul primario */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  /* Cambia el cursor al pasar el mouse */
 }
 
+/* Efecto hover del botón */
 input[type="submit"]:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;  /* Azul más oscuro al pasar el mouse */
 }
-
