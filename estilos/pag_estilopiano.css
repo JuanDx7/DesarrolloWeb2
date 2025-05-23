@@ -1,0 +1,44 @@
+.background {
+  position: absolute;  
+  inset: 0;
+  background-image: url('../img/fondo_prpiano.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;  
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  top: 20px;  
+  font-family: Verdana;
+  font-size: 36px;
+  text-shadow: 
+  -1.5px -1.5px 0px black,  
+  1.5px -1.5px 0px black,
+  -1.5px 1.5px 0px black,
+  1.5px 1.5px 0px black;  
+}
+
+p{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #c0392b;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+

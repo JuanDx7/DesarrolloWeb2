@@ -23,6 +23,7 @@ h2 {
 a {
     display: inline-block;
     float: right;
+    font-family: Verdana;
     margin-bottom: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -33,6 +34,7 @@ a {
 }
 
 table {
+    font-family: Verdana;
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;

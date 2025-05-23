@@ -1,21 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .background {
-  position: absolute;  
-  inset: 0;
-  background-image: url('../img/fondoinicio.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/fondoinicio.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 .formulario-registro {
@@ -24,6 +27,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -53,4 +57,11 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
 }

@@ -13,15 +13,15 @@ $nombreUsuario = $_SESSION['nombre'];
 <head>
     <meta charset="UTF-8">
     <title>Página Principal</title>
-    <link rel="stylesheet" href="../estilos/pag_estilo.css">
+    <link rel="stylesheet" href="../estilos/pag_estilopiano.css">
 </head>
 <body>
     <div class="background"></div>
     <h1>Bienvenido, <?php echo htmlspecialchars($nombreUsuario); ?>!</h1>
-    <p>Lo sentimos pero por el momento aún no iniciamos las clases. <br>
+    <p>Lo sentimos pero por el momento aún no iniciamos las clases🎹. <br>
     Vuelve más tarde.</p>
 
-    <a href="cerrar_sesion.php">Cerrar sesión</a>
+    <a href="../conexionesphp/cerrar_sesion.php">Cerrar sesión</a>
 </body>
 </html>
 
