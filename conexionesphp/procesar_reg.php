@@ -13,8 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar que la fecha de nacimiento no sea posterior al 31-12-2015
     $fechaLimite = '2015-12-31';
     if ($fechaNacimiento > $fechaLimite) {
-        echo "<script>alert('Por favor, ingrese una fecha de nacimiento válida (antes del 2016).'); window.history.back();</script>";
-        exit();  // Detener el script para que no continúe con el registro
+        echo "<script>alert('Por favor, ingrese una fecha de nacimiento válida (antes del 2016).');
+         window.history.back();</script>";
+        exit();  
     }
 
     // Eliminar vacíos (por si el usuario no seleccionó todos)
@@ -25,7 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Comparar cantidades, si no coinciden hay repetidos
     if (count($instrumentos_limpios) != count($instrumentos_unicos)) {
-        echo "<script>alert('No puedes seleccionar el mismo instrumento más de una vez.'); window.history.back();</script>";
+        echo "<script>alert('No puedes seleccionar el mismo instrumento más de una vez.');
+         window.history.back();</script>";
         exit();
     } 
 
@@ -51,7 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $instrumento3 = isset($instrumentos[2]) ? $instrumentos[2] : null;
 
             // Insertar en usuarios_cursos
-            $insertCurso = $conexion->prepare("INSERT INTO usuarios_cursos (id_usuario, nombre_usuario, fecha_inscripcion, instrumento1, instrumento2, instrumento3) 
+            $insertCurso = $conexion->prepare("INSERT INTO usuarios_cursos (id_usuario, nombre_usuario, fecha_inscripcion, 
+            instrumento1, instrumento2, instrumento3) 
                                                VALUES (?, ?, ?, ?, ?, ?)");
             $insertCurso->bind_param("isssss", $id_usuario, $nombre, $fechaRegistro, $instrumento1, $instrumento2, $instrumento3);
 
